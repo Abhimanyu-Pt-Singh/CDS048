@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detailer Stacker</title>
+    <style>
+        body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #282c34;
+    padding: 30px;
+    color: #fff;
+    animation: slideDown 0.5s ease-in-out;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.back a{
+    text-decoration: none;
+    color: white;
+       
+}
+
+
+
+.hero {
+    background: linear-gradient(135deg, #4a4e69, #9a8c98);
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+    border-bottom: 5px solid #22223b;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.features {
+    padding: 2rem;
+   background-color: rgb(183, 181, 181);
+    animation: fadeInUp 1s ease-in-out;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 2rem auto;
+    max-width: 800px;
+}
+
+.features h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.feature-item {
+    padding: 1.5rem;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s, transform 0.3s;
+    position: relative;
+}
+
+.feature-item:hover {
+    background-color: #f4f4f4;
+    transform: translateY(-2px);
+}
+
+.feature-item:last-child {
+    border-bottom: none; 
+}
+
+.feature-item h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1.5rem;
+    color: #22223b;
+}
+
+.how-it-works {
+    padding: 2rem;
+    background-color: #f0f0f0;
+    animation: fadeIn 1.5s ease-in-out;
+    border-radius: 8px;
+    margin: 2rem auto;
+    max-width: 800px;
+}
+
+.how-it-works h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: #4a4e69;
+}
+
+footer {
+    background-color: #282c34;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    animation: slideUp 0.5s ease-in-out;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Animations */
+@keyframes slideDown {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.feature-item:nth-child(1) { --delay: 0.1s; }
+.feature-item:nth-child(2) { --delay: 0.2s; }
+.feature-item:nth-child(3) { --delay: 0.3s; }
+.feature-item:nth-child(4) { --delay: 0.4s; }
+.feature-item:nth-child(5) { --delay: 0.5s; }
+.feature-item:nth-child(6) { --delay: 0.6s; }
+.feature-item:nth-child(7) { --delay: 0.7s; }
+.feature-item:nth-child(8) { --delay: 0.8s; }
+
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .features h2,
+    .how-it-works h2 {
+        font-size: 1.5rem;
+    }
+
+    .feature-item h3 {
+        font-size: 1.25rem;
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Detailer Stacker</div>
+        <div class="back"><a href="index.html">Back</a></div>
+    </header>
+
+    <section class="hero">
+        <h1>Unlock Comprehensive Insights on Companies & Websites</h1>
+        <p>Providing technology stack, financial status, subdomain mapping, and more in one place for cybersecurity enthusiasts, developers, and traders.</p>
+    </section>
+
+    <section id="features" class="features">
+        <h2>Key Features</h2>
+        <div class="feature-item">
+            <h3>Technology Stack Identification</h3>
+            <p>Explore the complete technology stack of any website, from frontend frameworks to backend servers.</p>
+        </div>
+        <div class="feature-item">
+            <h3>Subdomain and Infrastructure Mapping</h3>
+            <p>Discover all associated subdomains and understand the underlying infrastructure.</p>
+        </div>
+        <div class="feature-item">
+            <h3>Ownership and Authentication</h3>
+            <p>Retrieve ownership information, registration details, and authentication methods.</p>
+        </div>
+        <div class="feature-item">
+            <h3>Financial and Valuation Data</h3>
+            <p>Access insights on company valuation, revenue, IPO status, and stock performance.</p>
+        </div>
+        <div class="feature-item">
+            <h3>Employee and Organizational Data</h3>
+            <p>View estimated employee numbers and key personnel information.</p>
+        </div>
+        <div class="feature-item">
+            <h3>Bug Bounty Programs</h3>
+            <p>Identify companies participating in bug bounty programs, providing direct links for enthusiasts.</p>
+        </div>
+        <div class="feature-item">
+            <h3>App and Version Tracking</h3>
+            <p>Analyze mobile app availability, versions, and platform details.</p>
+        </div>
+        <div class="feature-item">
+            <h3>Market Data and Trader Insights</h3>
+            <p>Get information on market listings, IPO status, and other trading insights.</p>
+        </div>
+    </section>
+
+    <section id="how-it-works" class="how-it-works">
+        <h2>How It Works</h2>
+        <p>Detailer Stacker aggregates data using web scraping, Google Dorks, and authenticated API sources, presenting a seamless interface for cybersecurity, financial, and tech information.</p>
+        <ol>
+            <li><strong>Data Collection:</strong> Collects comprehensive information from secure sources.</li>
+            <li><strong>User Interface:</strong> A clean, user-friendly dashboard.</li>
+            <li><strong>Filters and Search:</strong> Search and filter for specific data categories.</li>
+        </ol>
+    </section>
+
+    <footer id="contact">
+        <p>&copy; 2024 Detailer Stack. All rights reserved.</p>
+    </footer>
+</body>
+</html>
